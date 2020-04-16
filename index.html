@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+
+      	<img src="C:\Users\TALLY\Desktop\SMITH\Web\Minimal audio player\App\assets\img/leke.jpg" onclick="leke();">
+      	<audio id="leke" preload="none">
+      		<source src="C:\Users\TALLY\Desktop\SMITH\Web\Minimal audio player\App\assets\audio/Leke Pahla Pahla Pyar.mp3" type="audio/mpeg">
+      	</audio>
+
+      </div>
+
+
+      <div class="swiper-slide">
+
+      	<img src="C:\Users\TALLY\Desktop\SMITH\Web\Minimal audio player\App\assets\img/tarana.jpg" onclick="tarana();">
+      	<audio id="tarana" preload="none">
+      		<source src="C:\Users\TALLY\Desktop\SMITH\Web\Minimal audio player\App\assets\audio/Main Sitaaron Kaa Taranaa _ Chalti Ka Naam Gaadi Songs _ Kishore Kumar _ Madhubala _ Filmigaane (192  kbps).mp3" type="audio/mpeg">
+      	</audio>
+
+      </div>
+
+
+            <div class="swiper-slide">
+
+      	<img src="C:\Users\TALLY\Desktop\SMITH\Web\Minimal audio player\App\assets\img/ikraar.jpg" onclick="ikraar();">
+      	<audio id="ikraar" preload="none">
+      		<source src="C:\Users\TALLY\Desktop\SMITH\Web\Minimal audio player\App\assets\audio/Pyar_Hua_Ikrar_Hua.mp3" type="audio/mpeg">
+      	</audio>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+	
+function leke() {
+	
+	let audioElem = document.getElementById("leke");
+	
+	if (audioElem.paused)
+		audioElem.play();
+	else
+		audioElem.pause();
+}
+
+function tarana() {
+	
+	let audioElem = document.getElementById("tarana");
+	
+	if (audioElem.paused)
+		audioElem.play();
+	else
+		audioElem.pause();
+}
+
+function ikraar() {
+	
+	let audioElem = document.getElementById("ikraar");
+	
+	if (audioElem.paused)
+		audioElem.play();
+	else
+		audioElem.pause();
+}
+</script>
+</body>
+</html>
